@@ -12,7 +12,7 @@ API keys, private datasets, or database service are required to start.
 Use Python 3.13.
 
 ```sh
-git clone https://github.com/Gban-jb/netzero-energy-loss.git
+git clone https://github.com/banjadecodes/netzero-energy-loss.git
 cd netzero-energy-loss
 python3 -m venv .venv
 source .venv/bin/activate
@@ -26,7 +26,7 @@ At https://share.streamlit.io, sign in with GitHub and create an app using:
 
 | Setting | Value |
 |---|---|
-| Repository | `Gban-jb/netzero-energy-loss` |
+| Repository | `banjadecodes/netzero-energy-loss` |
 | Branch | `main` |
 | Main file | `app.py` |
 | Python version | `3.13` |
@@ -46,9 +46,12 @@ or create a live URL automatically.
 6. **Energy & SCADA:** use packaged synthetic examples or upload interval energy/meter CSVs.
 7. **Assumptions / Fall dashboard / Maintenance options:** edit, save, reopen, and export the supported input scenarios.
 
-The [upload guide](sample-inputs/UPLOAD-GUIDE.md) lists the matching files and upload
-controls. Overview, Findings, Decisions, and Work orders use built-in synthetic data;
-their sample/export CSVs are not supported as uploads on those screens yet.
+The app sidebar includes **Download synthetic sample files**. Choose a workspace to
+download its clearly named sample bundle, or download all workspace samples and the
+upload guide in one zip. The [upload guide](sample-inputs/UPLOAD-GUIDE.md) lists the
+matching files and explains which workspaces accept uploads. Overview, Findings,
+Decisions, and Work orders use built-in synthetic data; their sample/export CSVs are
+not supported as uploads on those screens yet.
 
 ## Scope and limitations
 

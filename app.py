@@ -6,6 +6,7 @@ st.set_page_config(page_title='Solar Operations Console', page_icon='☼', layou
 
 from ui_components import inject_theme
 inject_theme()
+from sample_downloads import render_sidebar_downloads
 from scenario_library import DEFAULTS
 for scenario_key, default in DEFAULTS.items():
     st.session_state[scenario_key] = st.session_state.get(scenario_key, default)
@@ -35,6 +36,7 @@ with st.sidebar:
         for key in ['farm_tariff','farm_persist','farm_replace','farm_wait','farm_panel','find_search','find_severity','find_fault','find_inverter']:
             st.session_state.pop(key, None)
         st.rerun()
+    render_sidebar_downloads(st)
     st.markdown('<div class="muted-small">All panel findings and scenarios are illustrative synthetic examples.</div>', unsafe_allow_html=True)
 
 

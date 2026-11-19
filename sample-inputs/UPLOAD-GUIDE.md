@@ -2,6 +2,12 @@
 
 All files in this folder are synthetic training/demo inputs. Do not treat their values as site measurements or approved costs.
 
+## Download samples from the dashboard
+
+Open the app's left sidebar and expand **Download synthetic sample files**. Choose **Download all samples + guide (.zip)** to get every workspace folder, or select a workspace to download only its sample file(s). The zip names and folders match the workspace names below. Each sample filename also starts with `UPLOAD-<workspace>-` so it is easy to recognize.
+
+Some workspaces show sample/export formats for demonstration; they do not currently accept uploads. The notes below state exactly where upload works.
+
 | In-app workspace | File to use | Upload control / notes |
 |---|---|---|
 | **Overview** | `01-farm-overview/UPLOAD-Farm-overview-synthetic-findings.csv` | The current Overview is generated deterministically and does not import this CSV yet. Use the file as the panel findings export/sample schema. |
